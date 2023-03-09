@@ -1,0 +1,192 @@
+.logo {
+    width: 80px;
+    display: flex;
+    margin: 20px auto 0;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_favoritos li a {
+    border: solid 1px silver;
+}
+
+.nav-right {
+    right: 0;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.cursor-pointer li{
+    cursor: pointer;
+}
+.nav-right li {
+
+    text-align: right;
+}
+
+.corpo {
+    width: 100%;
+    margin: 0 auto;
+}
+
+li {
+    padding: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    border: silver 1px solid;
+}
+
+.btn-outline-success {
+    display: flex;
+    justify-content: center;
+    width: 270px;
+    margin: 0 auto;
+}
+
+.titulo {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.corpo-ajuste {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-line {
+    padding: 0 5px;
+    justify-content: space-between;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.navbar-expand-lg .navbar-toggler {
+    display: block !important;
+}
+
+.navbar-expand-lg .navbar-nav {
+    flex-direction: column !important;
+}
+
+.navbar-nav {
+    position: absolute;
+    background: white;
+    z-index: 1231;
+}
+
+li a {
+    color: #535353 !important;
+}
+
+li .black {
+    color: black !important;
+}
+
+
+@media (min-width:767px) {
+
+    #filme section {
+        display: flex;
+        gap: 10px;
+    }
+
+    .btn-outline-success span {
+        display: block;
+    }
+
+    .btn-outline-success i {
+        display: none;
+    }
+}
+
+.green {
+    color: green;
+}
+
+@media (max-width:767px) {
+    #filme div {
+        margin-bottom: 10px;
+    }
+
+
+    #filme {
+        margin: 0 auto;
+    }
+
+    .btn-outline-success span {
+        display: none;
+    }
+
+    .btn-outline-success {
+        align-items: center;
+        width: auto;
+    }
+
+    .btn-outline-success i {
+        display: block;
+    }
+}
+
+#filme {
+    width: 100%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.tabela {
+    width: 100%;
+    padding: 0 10px;
+    max-width: 700px;
+    margin: 15px auto;
+}
+
+.tabela h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#filme section div {
+    width: 100%;
+}
+
+#filme section img {
+    width: 100%;
+    max-width: 600px;
+}
+
+#fa-star {
+    position: absolute;
+    font-size: 24px;
+    top: 5px;
+    color: gold;
+}
+
+.favorito {
+    position: relative;
+}
+
+.favoritos i {
+    padding: 10px;
+    border: solid 1px silver;
+    border-radius: 8px;
+}
+
+
+
+.container-fluid {
+    padding: 0;
+}
+
+.p-6 {
+    padding: 6px;
+}
