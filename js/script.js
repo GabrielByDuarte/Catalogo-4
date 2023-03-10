@@ -14,8 +14,7 @@ function buscar() {
 
   resultado = input_value.replace(" ", "%20");
 
-  buscar_api = api + resultado;
-  url = buscar_api;
+  buscar_api = api + resultado; 
 
   // request = new XMLHttpRequest();
   // request.open("GET", url);
@@ -29,7 +28,7 @@ function buscar() {
   //   const filme = response.filme;
   //   //  data = pegarFilme(url);
   //   // filme = JSON.parse(data);
-  fetch(url)
+  fetch(buscar_api)
     .then(response => response.json())
     .then(filme => {
 
@@ -245,9 +244,9 @@ function categoria(genero_value) {
 
   for (let i = 0; i < favoritos_all.length; i++) {
     resultado = favoritos_all[i].replace(" ", "%20");
-    var url = "http://www.omdbapi.com/?apikey=10ef3ab9&t=" + resultado;
+    var buscar_api = "http://www.omdbapi.com/?apikey=10ef3ab9&t=" + resultado;
 
-    fetch(url)
+    fetch(buscar_api)
       .then(response => response.json())
       .then(filme => {
         if (filme.Genre == genero_value) {
