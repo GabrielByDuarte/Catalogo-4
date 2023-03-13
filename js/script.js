@@ -28,14 +28,8 @@ function buscar() {
   //   const filme = response.filme;
   //   //  data = pegarFilme(url);
   //   // filme = JSON.parse(data);
-  fetch(buscar_api, {
-    method: "POST",
-    body: JSON.stringify(filme),
-    mode: 'cors',
-    headers: {
-      'Content-Type': 'application/json',
-    }
-  }
+  fetch(buscar_api, {headers: {'Access-Control-Allow-Origin': '*'}}
+  
   ).
 
     then(response => response.json()).then(filme => {
