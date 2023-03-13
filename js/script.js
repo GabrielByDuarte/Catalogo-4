@@ -14,7 +14,7 @@ function buscar() {
 
   resultado = input_value.replace(" ", "%20");
 
-  buscar_api = api + resultado; 
+  buscar_api = api + resultado;
 
   // request = new XMLHttpRequest();
   // request.open("GET", url);
@@ -28,9 +28,17 @@ function buscar() {
   //   const filme = response.filme;
   //   //  data = pegarFilme(url);
   //   // filme = JSON.parse(data);
-  fetch(buscar_api)
-    .then(response => response.json())
-    .then(filme => {
+  fetch(buscar_api, {
+    method: "POST",
+    body: JSON.stringify(filme),
+    mode: 'cors',
+    headers: {
+      'Content-Type': 'application/json',
+    }
+  }
+  ).
+
+    then(response => response.json()).then(filme => {
 
       // console.log(filme.Title);
       var elemento_pai = document.getElementById("filme");
