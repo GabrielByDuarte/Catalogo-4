@@ -8,7 +8,7 @@ function buscar() {
 
   sumir_star();
 
-  api = "http://www.omdbapi.com/?apikey=10ef3ab9&t=";
+  api = "https://www.omdbapi.com/?apikey=10ef3ab9&t=";
 
   input_value = document.querySelector("#buscar").value;
 
@@ -28,7 +28,7 @@ function buscar() {
   //   const filme = response.filme;
   //   //  data = pegarFilme(url);
   //   // filme = JSON.parse(data);
-  fetch(buscar_api, {headers: {'Access-Control-Allow-Origin': 'http://www.omdbapi.com/?'}}
+  fetch(buscar_api, {headers: {'Access-Control-Allow-Origin': '*'}}
   
   ).
 
@@ -246,7 +246,7 @@ function categoria(genero_value) {
 
   for (let i = 0; i < favoritos_all.length; i++) {
     resultado = favoritos_all[i].replace(" ", "%20");
-    var buscar_api = "http://www.omdbapi.com/?apikey=10ef3ab9&t=" + resultado;
+    var buscar_api = "https://www.omdbapi.com/?apikey=10ef3ab9&t=" + resultado;
 
     fetch(buscar_api)
       .then(response => response.json())
