@@ -28,7 +28,7 @@ function buscar() {
   //   const filme = response.filme;
   //   //  data = pegarFilme(url);
   //   // filme = JSON.parse(data);
-  fetch(buscar_api, {headers: {'Access-Control-Allow-Origin': '*'}}
+  fetch(buscar_api, {headers: {'Access-Control-Allow-Origin': 'http://www.omdbapi.com/?'}}
   
   ).
 
